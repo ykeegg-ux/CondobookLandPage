@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Condobook | Plataforma completa de gestão condominial</title>
-  <meta name="description" content="Condobook: gestão administrativa, dashboard, múltiplos condomínios, comunicação com moradores, chamados, encomendas, manutenção e equipes em um só lugar.">
+  <title>Condobook | Gestão condominial em um só lugar</title>
+  <meta name="description" content="Condobook: gestão administrativa, múltiplos condomínios, comunicação com moradores, chamados, encomendas, manutenção e equipes em uma única plataforma.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/effects.css">
 </head>
 <body>
 
@@ -18,67 +19,55 @@
       <img src="assets/logo.png" alt="Condobook" class="brand__img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
       <span class="brand__txt" style="display:none"><b>Condo</b><i>Book</i></span>
     </a>
-    <nav class="nav__links" id="navLinks">
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
       <a href="#funcionalidades">Funcionalidades</a>
-      <a href="#dashboard">Dashboard</a>
+      <a href="#como">Como funciona</a>
       <a href="#beneficios">Benefícios</a>
       <a href="#contato">Contato</a>
       <div class="nav__mobile-cta">
-        <button class="btn btn--ghost" type="button">Entrar</button>
-        <button class="btn btn--primary" type="button">Cadastrar</button>
+        <a href="#contato" class="btn btn--primary">Solicitar demonstração</a>
       </div>
     </nav>
     <div class="nav__cta">
-      <button class="btn btn--ghost" type="button">Entrar</button>
-      <button class="btn btn--primary" type="button">Cadastrar</button>
+      <a href="#contato" class="btn btn--primary">Solicitar demonstração</a>
     </div>
-    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 
 <main>
-<section class="hero" id="inicio">
-  <div class="cubes" aria-hidden="true"><div class="cube cube--1" data-depth="40"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cube cube--2" data-depth="-30"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cube cube--3" data-depth="60"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cube cube--4" data-depth="-50"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cube cube--5" data-depth="30"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-  <div class="blob blob--a"></div><div class="blob blob--b"></div>
-  <div class="container hero__inner">
-    <span class="pill reveal"><span class="dot"></span> Gestão condominial completa</span>
-    <h1 class="reveal">Seu condomínio mais organizado. <span class="grad">Sua gestão mais inteligente.</span></h1>
-    <p class="lead reveal">Administre vários condomínios, converse com moradores, controle encomendas, chamados e manutenções, tudo em uma única plataforma.</p>
-    <div class="hero__btns reveal">
-      <button class="btn btn--primary btn--lg" type="button">Solicitar demonstração <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-      <a href="#funcionalidades" class="btn btn--outline btn--lg">Ver funcionalidades</a>
+  <section class="hero" id="inicio">
+    <div class="cubes" aria-hidden="true">
+      <div class="cube cube--1"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube--2"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube--3"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cube cube--4"><i></i><i></i><i></i><i></i><i></i><i></i></div>
     </div>
-    <p class="hero__note reveal">✓ Implantação guiada &nbsp; ✓ Suporte dedicado &nbsp; ✓ Para síndicos e administradoras</p>
+    <div class="container hero__inner">
+      <h1>Gestão condominial simples, em um só lugar.</h1>
+      <p class="lead">Administre vários condomínios, converse com moradores e acompanhe chamados, encomendas e manutenções em uma única plataforma.</p>
+      <div class="hero__btns">
+        <a href="#contato" class="btn btn--primary btn--lg">Solicitar demonstração</a>
+        <a href="#funcionalidades" class="btn btn--outline btn--lg">Ver funcionalidades</a>
+      </div>
 
-    <div class="mock reveal" id="dashboard">
-      <div class="float f1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 8-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><div><b>Nova encomenda</b><small>Bloco B · Apto 302</small></div></div>
-      <div class="float f2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3 2 11l6 2 2 7 4-5 5 4 3-16zM8 13l14-10"/></svg></span><div><b>Morador cadastrado</b><small>via Telegram</small></div></div>
-      <div class="float f3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><b>Manutenção agendada</b><small>Elevadores · amanhã</small></div></div>
-      <div class="mock__win">
-        <div class="mock__bar"><i></i><i></i><i></i><span>app.condobook.com.br/dashboard</span></div>
+      <div class="mock reveal" aria-hidden="true">
+        <div class="mock__bar"><i></i><i></i><i></i></div>
         <div class="mock__body">
           <aside class="mock__side">
-            <div class="s-item on">Dashboard</div><div class="s-item">Condomínios</div><div class="s-item">Moradores</div>
-            <div class="s-item">Chamados</div><div class="s-item">Encomendas</div><div class="s-item">Manutenção</div><div class="s-item">Equipes</div>
+            <div class="s-item on">Dashboard</div>
+            <div class="s-item">Condomínios</div>
+            <div class="s-item">Moradores</div>
+            <div class="s-item">Chamados</div>
+            <div class="s-item">Encomendas</div>
           </aside>
           <div class="mock__main">
             <div class="kpis">
-              <div class="kpi"><small>Condomínios</small><b data-count="12">0</b></div>
-              <div class="kpi"><small>Moradores</small><b data-count="1840">0</b></div>
-              <div class="kpi"><small>Chamados abertos</small><b data-count="23">0</b></div>
-              <div class="kpi"><small>Encomendas hoje</small><b data-count="67">0</b></div>
+              <div class="kpi"><small>Condomínios</small><b>12</b></div>
+              <div class="kpi"><small>Chamados abertos</small><b>23</b></div>
+              <div class="kpi"><small>Encomendas hoje</small><b>67</b></div>
             </div>
-            <div class="charts">
-              <div class="card-in chart">
-                <small>Atividade semanal</small>
-                <div class="bars"><i style="--h:45%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:90%"></i><i style="--h:65%"></i><i style="--h:80%"></i><i style="--h:50%"></i></div>
-              </div>
-              <div class="card-in donut-wrap">
-                <small>Chamados</small>
-                <div class="donut"><span>82%<em>resolvidos</em></span></div>
-              </div>
-            </div>
-            <div class="card-in list">
+            <div class="list">
               <div><span class="tag t1">Urgente</span> Vazamento · Bloco A <em>há 5 min</em></div>
               <div><span class="tag t2">Em andamento</span> Portão da garagem <em>há 1 h</em></div>
               <div><span class="tag t3">Concluído</span> Limpeza da piscina <em>há 3 h</em></div>
@@ -87,151 +76,156 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="marquee" aria-label="Recursos">
-  <div class="marquee__track">
-    <span>Gestão administrativa</span><span>Dashboard</span><span>Múltiplos condomínios</span><span>Telegram</span><span>Comunicação</span><span>Chamados e denúncias</span><span>Encomendas</span><span>Controle de acessos</span><span>Manutenção preventiva</span><span>Tarefas</span><span>Equipes</span>
-    <span>Gestão administrativa</span><span>Dashboard</span><span>Múltiplos condomínios</span><span>Telegram</span><span>Comunicação</span><span>Chamados e denúncias</span><span>Encomendas</span><span>Controle de acessos</span><span>Manutenção preventiva</span><span>Tarefas</span><span>Equipes</span>
-  </div>
-</section>
-
-<section class="stats">
-  <div class="container stats__grid">
-    <div class="reveal"><b>+10</b><span>módulos integrados</span></div>
-    <div class="reveal"><b>1</b><span>painel para todos os condomínios</span></div>
-    <div class="reveal"><b>24/7</b><span>moradores conectados pelo Telegram</span></div>
-    <div class="reveal"><b>100%</b><span>do histórico organizado</span></div>
-  </div>
-</section>
-
-<section class="section city3d" id="plataforma3d">
-  <div class="container city3d__grid">
-    <div class="city3d__txt reveal">
-      <span class="eyebrow">Vários condomínios, um só painel</span>
-      <h2>Do prédio à carteira inteira, <span class="grad">tudo conectado</span></h2>
-      <p>Arraste o mouse sobre a cidade e veja cada condomínio girar. No Condobook você alterna entre eles em um clique e mantém o controle de cada detalhe.</p>
-      <ul class="ticks"><li>Painel unificado por condomínio</li><li>Moradores conectados pelo Telegram</li><li>Equipes e tarefas em tempo real</li></ul>
+  <section class="stats" aria-label="Em números">
+    <div class="container stats__grid">
+      <div class="reveal"><b data-count="10" data-prefix="+">0</b><span>módulos integrados</span></div>
+      <div class="reveal"><b data-count="1">0</b><span>painel para todos os condomínios</span></div>
+      <div class="reveal"><b>24/7</b><span>moradores conectados pelo Telegram</span></div>
+      <div class="reveal"><b data-count="100" data-suffix="%">0</b><span>do histórico organizado</span></div>
     </div>
-    <div class="city" id="city">
-      <div class="stage" id="stage">
-        <div class="ground"></div>
-        <div class="tower " style="--w:90px;--d:90px;--h:230px;--x:-30px;--z:-20px;--c:#12408a"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div><div class="tower " style="--w:70px;--d:70px;--h:150px;--x:-150px;--z:40px;--c:#1f6fc2"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div><div class="tower " style="--w:80px;--d:80px;--h:180px;--x:100px;--z:50px;--c:#2a8fb8"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div><div class="tower " style="--w:60px;--d:60px;--h:110px;--x:20px;--z:150px;--c:#3ab5b0"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div><div class="tower " style="--w:60px;--d:60px;--h:120px;--x:-120px;--z:-110px;--c:#3ab5b0"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div><div class="tower " style="--w:70px;--d:70px;--h:90px;--x:160px;--z:-80px;--c:#1f6fc2"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+  </section>
+
+  <section class="section city3d" id="plataforma">
+    <div class="container city3d__grid">
+      <div class="city3d__txt reveal">
+        <span class="eyebrow">Vários condomínios, um só painel</span>
+        <h2>Do prédio à carteira inteira, tudo conectado</h2>
+        <p>Arraste a cidade com o mouse e veja cada condomínio girar. No Condobook você alterna entre eles em um clique.</p>
+        <ul class="ticks"><li>Painel unificado por condomínio</li><li>Moradores conectados pelo Telegram</li><li>Equipes e tarefas em tempo real</li></ul>
       </div>
-      <div class="chip chip--1">Chamados <b>23</b></div>
-      <div class="chip chip--2">Encomendas <b>67</b></div>
-      <div class="chip chip--3">Moradores <b>1.840</b></div>
+      <div class="city" id="city" aria-hidden="true">
+        <div class="stage" id="stage">
+          <div class="ground"></div>
+          <div class="tower" style="--w:90px;--d:90px;--h:230px;--x:-30px;--z:-20px;--c:#12408a"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+          <div class="tower" style="--w:70px;--d:70px;--h:150px;--x:-150px;--z:40px;--c:#1f6fc2"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+          <div class="tower" style="--w:80px;--d:80px;--h:180px;--x:100px;--z:50px;--c:#2a8fb8"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+          <div class="tower" style="--w:60px;--d:60px;--h:110px;--x:20px;--z:150px;--c:#3ab5b0"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+          <div class="tower" style="--w:60px;--d:60px;--h:120px;--x:-120px;--z:-110px;--c:#3ab5b0"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+          <div class="tower" style="--w:70px;--d:70px;--h:90px;--x:160px;--z:-80px;--c:#1f6fc2"><i class="tf tf-f"></i><i class="tf tf-b"></i><i class="tf tf-l"></i><i class="tf tf-r"></i><i class="tf tf-t"></i></div>
+        </div>
+        <div class="chip chip--1">Chamados <b>23</b></div>
+        <div class="chip chip--2">Encomendas <b>67</b></div>
+        <div class="chip chip--3">Moradores <b>1.840</b></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section showcase" id="explorar">
-  <div class="container">
-    <div class="head reveal">
-      <span class="eyebrow">Explore a plataforma</span>
-      <h2>Cada área da gestão, <span class="grad">a um clique</span></h2>
+  <section class="section" id="funcionalidades">
+    <div class="container">
+      <div class="head">
+        <span class="eyebrow">Funcionalidades</span>
+        <h2>O que a sua gestão precisa</h2>
+        <p>Módulos pensados para o dia a dia de síndicos, administradoras e equipes.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg></span>
+          <h3>Gestão administrativa</h3>
+          <p>Cadastros, documentos e rotinas centralizados, com organização e segurança.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-3v15M9 21V3l6 3v15M15 21h6V11l-6-2"/></svg></span>
+          <h3>Vários condomínios</h3>
+          <p>Um único painel para toda a carteira. Alterne entre condomínios com um clique.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg></span>
+          <h3>Comunicação com moradores</h3>
+          <p>Cadastro e avisos pelo Telegram, de forma rápida e sem burocracia.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>
+          <h3>Chamados e denúncias</h3>
+          <p>Registre, priorize e acompanhe cada ocorrência até a resolução.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="m21 8-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span>
+          <h3>Encomendas e acessos</h3>
+          <p>Controle de recebimento e retirada, com registro de entradas e visitantes.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+          <h3>Manutenção e equipes</h3>
+          <p>Revisões programadas e tarefas distribuídas entre porteiros, zeladores e prestadores.</p>
+        </article>
+      </div>
     </div>
-    <div class="tabs reveal" role="tablist">
-      <button class="tab on" data-tab="0" role="tab">Dashboard</button>
-      <button class="tab" data-tab="1" role="tab">Telegram</button>
-      <button class="tab" data-tab="2" role="tab">Encomendas</button>
-      <button class="tab" data-tab="3" role="tab">Manutenção</button>
-      <button class="tab" data-tab="4" role="tab">Equipes</button>
-    </div>
-    <div class="panels reveal">
-      <div class="panel on"><div class="panel__txt"><h3>Visão geral de todos os condomínios</h3><p>Indicadores, ocorrências e tarefas reunidos em um painel único e atualizado.</p></div><div class="panel__vis"><div class="pv-card"><small>Resolvidos</small><b>82%</b><div class="meter"><i style="--w:82%"></i></div></div><div class="pv-card"><small>Condomínios ativos</small><b>12</b><div class="meter"><i style="--w:100%"></i></div></div><div class="pv-card"><small>Tarefas no prazo</small><b>94%</b><div class="meter"><i style="--w:94%"></i></div></div></div></div>
-      <div class="panel"><div class="panel__txt"><h3>Moradores conectados em segundos</h3><p>O cadastro acontece pelo Telegram, de forma simples, sem planilhas ou formulários longos.</p></div><div class="panel__vis"><div class="chat c-in">Olá! Quero me cadastrar.</div><div class="chat c-out">Cadastro concluído! Bem-vindo ao seu condomínio</div><div class="chat c-out">Você receberá avisos e encomendas aqui.</div></div></div>
-      <div class="panel"><div class="panel__txt"><h3>Encomendas e acessos sob controle</h3><p>Registre chegadas e retiradas, e mantenha o histórico de entradas sempre à mão.</p></div><div class="panel__vis"><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 8-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><div><b>Bloco B · 302</b><small>Aguardando retirada</small></div></div><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><b>Bloco A · 104</b><small>Retirada há 10 min</small></div></div><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17M3 21h18M15 12h.01"/></svg></span><div><b>Visitante</b><small>Entrada registrada</small></div></div></div></div>
-      <div class="panel"><div class="panel__txt"><h3>Manutenção que previne problemas</h3><p>Programe revisões e acompanhe cada serviço até a conclusão.</p></div><div class="panel__vis"><div class="pv-card"><small>Elevadores</small><b>Em 2 dias</b><div class="meter"><i style="--w:80%"></i></div></div><div class="pv-card"><small>Bombas</small><b>Em 12 dias</b><div class="meter"><i style="--w:40%"></i></div></div><div class="pv-card"><small>Extintores</small><b>Em 30 dias</b><div class="meter"><i style="--w:15%"></i></div></div></div></div>
-      <div class="panel"><div class="panel__txt"><h3>Equipes alinhadas e produtivas</h3><p>Distribua tarefas operacionais e acompanhe quem está fazendo o quê.</p></div><div class="panel__vis"><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14 4 6 6M4 20l8-8M12 12l4-4 4 4-4 4zM4 20l3-1 1-3"/></svg></span><div><b>Zeladoria</b><small>5 tarefas em andamento</small></div></div><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>Portaria</b><small>3 tarefas concluídas</small></div></div><div class="pv-card row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><b>Manutenção</b><small>2 tarefas atrasadas</small></div></div></div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="funcionalidades">
-  <div class="container">
-    <div class="head reveal">
-      <span class="eyebrow">Funcionalidades</span>
-      <h2>Tudo o que a sua gestão precisa, <span class="grad">em um só lugar</span></h2>
-      <p>Módulos pensados para o dia a dia de síndicos, administradoras e equipes operacionais.</p>
+  <section class="section section--soft" id="como">
+    <div class="container">
+      <div class="head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Comece em três passos</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b>1</b><h3>Configure</h3><p>Cadastre seus condomínios e organize a estrutura administrativa.</p></div>
+        <div class="step reveal"><b>2</b><h3>Conecte</h3><p>Moradores entram pelo Telegram e passam a receber tudo em tempo real.</p></div>
+        <div class="step reveal"><b>3</b><h3>Gerencie</h3><p>Acompanhe chamados, encomendas, equipes e manutenções no painel.</p></div>
+      </div>
     </div>
-    <div class="grid">
-      <article class="card reveal"><span class="ci c1"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg></span><h3>Gestão administrativa</h3><p>Centralize cadastros, documentos e rotinas administrativas com organização e segurança.</p></article>
-      <article class="card reveal"><span class="ci c2"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><h3>Dashboard inteligente</h3><p>Indicadores em tempo real para decidir mais rápido e acompanhar tudo de relance.</p></article>
-      <article class="card reveal"><span class="ci c3"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-3v15M9 21V3l6 3v15M15 21h6V11l-6-2M6 12h.01M6 16h.01M12 8h.01M12 12h.01"/></svg></span><h3>Múltiplos condomínios</h3><p>Gerencie vários condomínios em uma única conta, alternando entre eles com um clique.</p></article>
-      <article class="card reveal"><span class="ci c4"><svg viewBox="0 0 24 24"><path d="M22 3 2 11l6 2 2 7 4-5 5 4 3-16zM8 13l14-10"/></svg></span><h3>Cadastro via Telegram</h3><p>Moradores se cadastram de forma simples e rápida pelo Telegram, sem burocracia.</p></article>
-      <article class="card reveal"><span class="ci c1"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg></span><h3>Comunicação com moradores</h3><p>Avisos, comunicados e mensagens entregues direto a quem importa, no canal que usam.</p></article>
-      <article class="card reveal"><span class="ci c2"><svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><h3>Chamados e denúncias</h3><p>Registre, priorize e acompanhe ocorrências até a resolução, com histórico completo.</p></article>
-      <article class="card reveal"><span class="ci c3"><svg viewBox="0 0 24 24"><path d="m21 8-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><h3>Encomendas e acessos</h3><p>Controle de recebimento, retirada de encomendas e registro de entradas e visitantes.</p></article>
-      <article class="card reveal"><span class="ci c4"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><h3>Manutenção preventiva</h3><p>Programe revisões periódicas e evite problemas antes que eles virem custos.</p></article>
-      <article class="card reveal"><span class="ci c1"><svg viewBox="0 0 24 24"><path d="m9 11 3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span><h3>Tarefas operacionais</h3><p>Distribua atividades, defina prazos e acompanhe a execução do início ao fim.</p></article>
-      <article class="card reveal"><span class="ci c2"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Gestão de equipes</h3><p>Organize porteiros, zeladores e prestadores com responsabilidades bem definidas.</p></article>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section section--dark" id="como">
-  <div class="container">
-    <div class="head reveal">
-      <span class="eyebrow eyebrow--lt">Como funciona</span>
-      <h2>Do primeiro contato à gestão <span class="grad grad--lt">completa</span></h2>
+  <section class="section" id="beneficios">
+    <div class="container benefits">
+      <div class="benefits__intro">
+        <span class="eyebrow">Benefícios</span>
+        <h2>Mais controle, menos retrabalho</h2>
+        <p>Processos digitais que substituem planilhas, papéis e recados soltos.</p>
+      </div>
+      <ul class="benefits__list">
+        <li><h3>Moradores mais satisfeitos</h3><p>Comunicação clara e respostas rápidas aumentam a confiança na gestão.</p></li>
+        <li><h3>Transparência</h3><p>Todo o histórico de ocorrências, tarefas e acessos sempre à mão.</p></li>
+        <li><h3>Economia com prevenção</h3><p>Manutenções planejadas reduzem gastos emergenciais.</p></li>
+        <li><h3>Mais segurança</h3><p>Controle de acessos e registros que protegem moradores e condomínio.</p></li>
+      </ul>
     </div>
-    <div class="steps">
-      <div class="step reveal"><b>01</b><h3>Configure</h3><p>Cadastre seus condomínios e organize a estrutura administrativa.</p></div>
-      <div class="step reveal"><b>02</b><h3>Conecte</h3><p>Moradores entram pelo Telegram e passam a receber tudo em tempo real.</p></div>
-      <div class="step reveal"><b>03</b><h3>Gerencie</h3><p>Acompanhe chamados, encomendas, equipes e manutenções no dashboard.</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="beneficios">
-  <div class="container">
-    <div class="head reveal">
-      <span class="eyebrow">Benefícios</span>
-      <h2>Mais controle, menos <span class="grad">retrabalho</span></h2>
+  <section class="section section--soft" id="faq">
+    <div class="container faq">
+      <div class="head">
+        <span class="eyebrow">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <details class="reveal"><summary>Preciso instalar algum programa?</summary><p>Não. O Condobook funciona direto no navegador, e os moradores usam o Telegram que já têm no celular.</p></details>
+      <details class="reveal"><summary>Posso gerenciar mais de um condomínio?</summary><p>Sim. Todos os condomínios ficam em uma única conta, e você alterna entre eles com um clique.</p></details>
+      <details class="reveal"><summary>Como os moradores se cadastram?</summary><p>Pelo Telegram, de forma simples e sem formulários longos ou planilhas.</p></details>
+      <details class="reveal"><summary>Existe ajuda para começar?</summary><p>Sim. Nossa equipe acompanha a implantação e oferece suporte no dia a dia.</p></details>
     </div>
-    <div class="benefits">
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg></span><h3>Agilidade no dia a dia</h3><p>Processos digitais que substituem planilhas, papéis e recados soltos.</p></div>
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Moradores mais satisfeitos</h3><p>Comunicação clara e respostas rápidas aumentam a confiança na gestão.</p></div>
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span><h3>Transparência total</h3><p>Todo o histórico de ocorrências, tarefas e acessos sempre à mão.</p></div>
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9a2.5 2 0 0 0-2.5-1.5c-1.4 0-2.5.7-2.5 2s1 1.7 2.5 2 2.5.7 2.5 2-1.1 2-2.5 2A2.5 2 0 0 1 9.5 15M12 6v1.5M12 16.5V18"/></svg></span><h3>Economia com prevenção</h3><p>Manutenções planejadas reduzem gastos emergenciais e imprevistos.</p></div>
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg></span><h3>Escala sem complicação</h3><p>Cresça sua carteira de condomínios sem multiplicar a operação.</p></div>
-      <div class="ben reveal"><span class="bi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Mais segurança</h3><p>Controle de acessos e registros que protegem moradores e condomínio.</p></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta" id="contato">
-  <div class="container">
-    <div class="cta__box reveal">
-      <div class="blob blob--c"></div>
-      <h2>Pronto para transformar a gestão do seu condomínio?</h2>
-      <p>Veja o Condobook em ação e descubra como organizar tudo em um só lugar.</p>
-      <button class="btn btn--white btn--lg" type="button">Solicitar demonstração</button>
+  <section class="cta" id="contato">
+    <div class="container">
+      <div class="cta__box">
+        <h2>Quer ver o Condobook em ação?</h2>
+        <p>Fale com a nossa equipe e veja como organizar a gestão do seu condomínio.</p>
+        <a href="https://wa.me/5511975438635?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20Condobook." class="btn btn--white btn--lg" target="_blank" rel="noopener">Solicitar demonstração</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer class="footer">
-  <div class="container footer__grid">
-    <div class="footer__brand">
-      <span class="brand__txt"><b>Condo</b><i>Book</i></span>
-      <p>Plataforma completa de gestão condominial.</p>
-    </div>
-    <div><h4>Produto</h4><a href="#funcionalidades">Funcionalidades</a><a href="#dashboard">Dashboard</a><a href="#beneficios">Benefícios</a></div>
-    <div><h4>Empresa</h4><a href="#inicio">Sobre</a><a href="#contato">Contato</a><a href="#inicio">Suporte</a></div>
-    <div><h4>Legal</h4><a href="#inicio">Termos de uso</a><a href="#inicio">Privacidade</a></div>
+  <div class="container footer__inner">
+    <span class="brand__txt"><b>Condo</b><i>Book</i></span>
+    <nav class="footer__links" aria-label="Rodapé">
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#como">Como funciona</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <small>© 2026 Condobook. Todos os direitos reservados.</small>
   </div>
-  <div class="container footer__bottom">© 2026 Condobook. Todos os direitos reservados.</div>
 </footer>
 
 <a href="https://wa.me/5511975438635?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20Condobook." class="wpp" id="whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <span class="wpp__tip">Fale conosco no WhatsApp</span>
   <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.02c0 2.12.56 4.19 1.62 6.01L4 29l8.14-1.59a12 12 0 0 0 3.9.65h.01C22.68 28.06 28 22.66 28 16.04 28 9.4 22.68 3 16.04 3zm0 22.03c-1.2 0-2.37-.32-3.4-.93l-.24-.15-4.83.94.99-4.7-.16-.25a9.9 9.9 0 0 1-1.52-5.27c0-5.47 4.5-9.92 10.04-9.92 5.54 0 10.04 4.45 10.04 9.92s-4.5 10.36-8.92 10.36zm5.5-7.4c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.95 1.18-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.63-.93-2.23-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.3 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.08-.13-.28-.2-.58-.35z"/></svg>
 </a>
 
 <script src="js/main.js"></script>
+<script src="js/city.js"></script>
 </body>
 </html>
